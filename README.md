@@ -6,6 +6,8 @@ Web Flat UI for Transmission
 
 Transmission-WFUI is a simplified interface to Transmission. I cleaned many features and got flat design :)
 
+** Still developing **
+
 ## Installation
 
 This UI is based on Transmission 2.84 running on Debian 8
