@@ -8,6 +8,10 @@ Transmission-WFUI is a simplified interface to Transmission. I cleaned many feat
 
 ** Still developing **
 
+## Screenshot
+
+![Screenshot](/preview.jpg)
+
 ## Installation
 
 This UI is based on Transmission 2.84 running on Debian 8
