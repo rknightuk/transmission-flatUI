@@ -246,11 +246,13 @@ Transmission.prototype =
 		if (formdir == dir)
 		{
 			e = $('label#add-dialog-folder-label');
+			f = $('.spaceDropZone span');
 			if (bytes > 0)
 				str = '<i>(' + Transmission.fmt.size(bytes) + ' Free)</i>';
 			else
 				str = '';
-			e.html ('Destination folder ' + str);
+			e.html('Destination folder ' + str);
+			f.html('<span>' + Transmission.fmt.size(bytes) + '<br>Free</span>');
 		}
 	},
 

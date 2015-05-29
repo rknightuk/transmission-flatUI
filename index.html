@@ -85,19 +85,22 @@
 				<div class="column small-12">
 					<div id="upload_container">
 						<form action="#" method="post" id="torrent_upload_form" enctype="multipart/form-data" target="torrent_upload_frame">
-							<div class="dropZone column small-6">
+							<div class="dropZone column small-8">
 								<span>Drag & Drop</span>
 								<input type="file" name="torrent_files[]" id="torrent_upload_file" multiple="multiple" />
+								<div class="actionsDropZone">
+									<a href="#upload" id="upload_confirm_button"><i class="fa fa-cloud-upload"></i>Upload</a>
+									<a href="#cancel" id="upload_cancel_button"><i class="fa fa-times"></i>Cancel</a>
+								</div>
 							</div>
-							<div class="optionsDropZone column small-6">
+							<div class="spaceDropZone column small-4">
+								<span></span>
+							</div>
+							<div class="optionsDropZone">
 								<label id='add-dialog-folder-label' for="add-dialog-folder-input">Destination folder</label>
 								<input type="text" id="add-dialog-folder-input"/>
 								<input type="checkbox" id="torrent_auto_start" />
 								<label for="torrent_auto_start" id="auto_start_label">Start when added</label>
-							</div>
-							<div class="actionsDropZone">
-								<a href="#upload" id="upload_confirm_button"><i class="fa fa-cloud-upload"></i>Upload</a>
-								<a href="#cancel" id="upload_cancel_button"><i class="fa fa-times"></i>Cancel</a>
 							</div>
 						</form>
 					</div>
