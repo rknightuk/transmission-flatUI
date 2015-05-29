@@ -370,7 +370,6 @@ div.spaceDropZone {
   color: #34495E;
 }
 body::-webkit-scrollbar {
-  /*width: 10px;*/
   width: 0;
 }
 body::-webkit-scrollbar-track {
