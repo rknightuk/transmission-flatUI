@@ -25,7 +25,9 @@ body {
   div#toolbar > * {
     cursor: pointer;
     display: inline-block;
-    float: left; }
+    float: left; 
+    color: #ecf0f1;
+}
   div#toolbar > div#toolbar-separator {
     height: 25px;
     margin-top: 8px;
@@ -48,8 +50,8 @@ body {
     background-image: url("images/toolbar-info.png");
     float: right;
     margin-right: 4px; }
-  div#toolbar > *.disabled {
-    opacity: 0.25; }
+  div#toolbar > *.disabled i.fa {
+    color: #34495e; }
 
 /***
 ****
@@ -71,18 +73,21 @@ body {
         color: #999; }
     #statusbar #filter #filter-count {
       margin-left: 8px; }
-  #statusbar #speed-info {
-    font-size: 18px;
-  }
-    #statusbar #speed-info * {
-      display: inline-block; }
-    #statusbar #speed-info #speed-up-icon {
-      margin-left: 230px; }
-    #statusbar #speed-info #speed-dn-icon {
+  #speed-info {
+    float: right;
+    font-size: 14px;
+    font-weight: 300;
+}
+    #speed-info * {
+      display: inline-block; 
+      line-height: 50px;
+      color: #ffffff;
+}
+    #speed-info #speed-up-icon {
+      margin-left: 10px; }
+    #speed-info #speed-dn-icon {
 
     }
-    #statusbar #speed-info #speed-up-container, #statusbar #speed-info #speed-dn-container {
-      display: inline; }
 
 /***
 ****
@@ -110,12 +115,14 @@ ul.torrent_list {
    * are five 'decorator' classNames: paused, queued, magnet, leeching, seeding.
    */ }
   ul.torrent_list li.torrent {
-    border-bottom: 5px solid #bdc3c7;
-    padding: 15px 25px;
+    padding: 20px 25px;
     color: #666666;
     background-color: #ecf0f1; 
-    margin-top: 20px;
+    margin-top: 25px;
 }
+  ul.torrent_list li.torrent:first-child {
+    margin-top: 0;
+  }
     ul.torrent_list li.torrent.compact {
       padding: 4px; }
     ul.torrent_list li.torrent.even {
@@ -150,7 +157,7 @@ ul.torrent_list {
         background-position: center center; }
     ul.torrent_list li.torrent div.torrent_name {
       font-size: 14px;
-      font-weight: bold;
+      font-weight: 500;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; 
@@ -176,7 +183,7 @@ ul.torrent_list {
     ul.torrent_list li.torrent.selected div.torrent_progress_details.error, ul.torrent_list li.torrent.selected div.torrent_peer_details.error {
       color: #FFF; }
   ul.torrent_list div.torrent_progress_bar_container {
-    height: 10px;
+    height: 5px;
     position: relative; }
     ul.torrent_list div.torrent_progress_bar_container.compact {
       width: 50px;
@@ -185,8 +192,8 @@ ul.torrent_list {
       margin-top: 2px;
       /*float: right;*/ }
     ul.torrent_list div.torrent_progress_bar_container.full {
-      margin-top: 5px;
-      margin-bottom: 10px; }
+      margin-top: 10px;
+      margin-bottom: 15px; }
   ul.torrent_list div.torrent_peer_details.compact {
     margin-top: 2px;
     margin-right: 65px;
@@ -266,17 +273,11 @@ div.rowOfToolbar {
 div#toolbar i.fa {
   font-size: 22px;
   color: #ecf0f1;
-  padding: 19px 12px;
+  padding: 0 14px;
+  line-height: 100px;
 }
 div#toolbar div:last-child i.fa {
-  padding: 19px 0 19px 12px;
-}
-div.zoneDL {
-  position: relative;
-  background: #34495e;
-  color: #ecf0f1;
-  padding: 20px 0;
-  z-index: 1;
+  padding: 0 0 0 14px;
 }
 div.zoneTorrents {
   padding: 50px 0;
@@ -284,24 +285,39 @@ div.zoneTorrents {
 div.logo {
   float: left;
   color: #ecf0f1;
-  font-size: 20px;
-  padding: 15px 0;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 100px;
 }
 div.logo span {
   margin-left: 10px;
-  font-weight: 300;
+}
+div.logo span i {
+  font-style: normal;
+  color: #16A085;
+}
+.zoneFilter {
+  position: relative;
+  background: #34495e;
+  z-index: 1;
 }
 input#torrent_search {
-  width: 100%;
-  border: none;
-  padding: 15px 25px;
-  border-bottom: 5px solid #bdc3c7;
-  background: #ecf0f1;
+  float: left;
+  width: 50%;
+  height: 50px;
   outline: none;
+  border: none;
+  padding-left: 30px;
+  color: #ffffff;
+  background: #34495E;
+  font-family: 'Roboto', sans-serif;
 }
-div#statusbar div#speed-info i.fa {
+input#torrent_search::-webkit-input-placeholder {
+  color:#ffffff;
+}
+div#speed-info i.fa {
   margin-right: 5px;
-  vertical-align: 2px;
+  vertical-align: 1px;
 }
 div.zoneUpload {
   position: relative;
@@ -377,4 +393,14 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
   background-color: #bdc3c7;
+}
+div.search:before {
+  position: absolute;
+  top: 0;
+  left: 0.9375rem;
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 14px;
+  line-height: 50px;
+  color: #ffffff;
 }

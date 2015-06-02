@@ -1260,11 +1260,9 @@ Transmission.prototype =
 
 		$('#speed-up-container').toggleClass('active', u>0 );
 		$('#speed-up-label').text( fmt.speedBps( u ) );
-		gaugeUp.set(u);
 
 		$('#speed-dn-container').toggleClass('active', d>0 );
 		$('#speed-dn-label').text( fmt.speedBps( d ) );
-		gaugeDown.set(d);
 
 		// visible torrents
 		$('#filter-count').text( fmt.countString('Transfer','Transfers',this._rows.length ) );

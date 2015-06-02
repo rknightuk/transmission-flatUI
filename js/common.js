@@ -52,7 +52,7 @@ $(document).ready(function() {
 
 	if ($.browser.safari) {
 		// Move search field's margin down for the styled input
-		$('#torrent_search').css('margin-top', 3);
+		// $('#torrent_search').css('margin-top', 3);
 	}
 	if (isMobileDevice){
 		window.onload = function(){ setTimeout(function() { window.scrollTo(0,1); },500); };
