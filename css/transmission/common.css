@@ -311,6 +311,8 @@ input#torrent_search {
   color: #ffffff;
   background: #34495E;
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
 }
 input#torrent_search::-webkit-input-placeholder {
   color:#ffffff;
