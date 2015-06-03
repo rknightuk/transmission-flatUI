@@ -78,7 +78,7 @@
 				<div class="column small-12">
 					<div id="upload_container">
 						<form action="#" method="post" id="torrent_upload_form" enctype="multipart/form-data" target="torrent_upload_frame">
-							<div class="dropZone column small-8">
+							<div class="dropZone column small-12 medium-8">
 								<span>Drag & Drop</span>
 								<input type="file" name="torrent_files[]" id="torrent_upload_file" multiple="multiple" />
 								<div class="actionsDropZone">
@@ -86,7 +86,7 @@
 									<a href="#cancel" id="upload_cancel_button"><i class="fa fa-times"></i>Cancel</a>
 								</div>
 							</div>
-							<div class="spaceDropZone column small-4">
+							<div class="spaceDropZone column small-12 medium-4">
 								<span></span>
 							</div>
 							<div class="optionsDropZone">
@@ -451,6 +451,13 @@
 		        $('div.dropZone span').html(filename);
 
 		    });
+
+		    /* Placeholder Filter */
+
+		    $('#torrent_search').on('focus', function(){ $(this).attr('placeholder', ''); });
+
+		    $('#torrent_search').on('blur', function(){ $(this).attr('placeholder', 'Filter'); });
+
 
 	    </script>
 
