@@ -6,9 +6,9 @@ Web Flat UI for Transmission
 
 Transmission-WFUI is a simplified interface to Transmission.
 
-I cleaned many features and got flat design :)
+I cleaned many features and got flat design.
 
-** Under development **
+*** Under development ***
 
 ## Screenshot
 
@@ -27,7 +27,7 @@ $ mv /usr/share/transmission/web/ /usr/share/transmission/web.old/
 Then, download the new UI :
 
 ```sh
-$ git https://github.com/Kalizo/Transmission-WFUI.git /usr/share/transmission/web/
+$ git clone https://github.com/Kalizo/Transmission-WFUI.git /usr/share/transmission/web/
 ```
 
 Hum... Wait... That's all !
