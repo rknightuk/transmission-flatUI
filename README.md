@@ -4,9 +4,11 @@ Web Flat UI for Transmission
 
 ## Description
 
-Transmission-WFUI is a simplified interface to Transmission. I cleaned many features and got flat design :)
+Transmission-WFUI is a simplified interface to Transmission.
 
-** Still developing **
+I cleaned many features and got flat design :)
+
+** Under development **
 
 ## Screenshot
 
@@ -14,7 +16,7 @@ Transmission-WFUI is a simplified interface to Transmission. I cleaned many feat
 
 ## Installation
 
-This UI is based on Transmission 2.84 running on Debian 8
+(This UI is based on Transmission 2.84 running on Debian 8)
 
 First, save the original UI with :
 
@@ -28,11 +30,8 @@ Then, download the new UI :
 $ git https://github.com/Kalizo/Transmission-WFUI.git /usr/share/transmission/web/
 ```
 
-Finally, refresh Transmission :
+Hum... Wait... That's all !
 
-```sh
-$ sudo service transmission-daemon reload
-```
 
 ## Credits
 
