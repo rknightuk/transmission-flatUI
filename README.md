@@ -4,11 +4,9 @@ Web Flat UI for Transmission
 
 ## Description
 
-Transmission-WFUI is a simplified interface to Transmission.
+Transmission-WFUI is a simplified interface to Transmission. I cleaned many features and got flat design.
 
-I cleaned many features and got flat design.
-
-*** Under development ***
+** Under development **
 
 ## Screenshot
 
