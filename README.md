@@ -10,7 +10,7 @@ Transmission-WFUI is a simplified interface to Transmission. I cleaned many feat
 
 ## Screenshot
 
-![Screenshot](/preview.jpg)
+![Screenshot](/preview.png)
 
 ## Installation
 
