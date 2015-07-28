@@ -51,7 +51,9 @@ body {
     float: right;
     margin-right: 4px; }
   div#toolbar > *.disabled i.fa {
-    color: #34495e; }
+      color: #FDFDFD;
+      opacity: 0.5;
+  }
 
 /***
 ****
@@ -267,7 +269,7 @@ div#torrent_inspector {
 }
 div.rowOfToolbar {
   position: relative;
-  background: #2c3e50;
+  background: #be3a30;
   z-index: 2;
 }
 div#toolbar i.fa {
@@ -294,11 +296,10 @@ div.logo span {
 }
 div.logo span i {
   font-style: normal;
-  color: #16A085;
 }
 .zoneFilter {
   position: relative;
-  background: #34495e;
+  background: #e54d42;
   z-index: 1;
 }
 input#torrent_search {
@@ -309,7 +310,7 @@ input#torrent_search {
   border: none;
   padding-left: 30px;
   color: #ffffff;
-  background: #34495E;
+  background: #e54d42;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -343,7 +344,7 @@ div.zoneUpload.active {
 div.dropZone {
   position: relative;
   color: #ECF0F1;
-  background: #34495E;
+  background: #c0392b;
   padding: 55px 0 0 0;
   height: 225px;
 }
@@ -377,7 +378,7 @@ div.actionsDropZone a {
   margin: 0 10px;
   padding: 10px 20px;
   background: #ECF0F1;
-  color: #34495E;
+  color: #c0392b;
 }
 div.actionsDropZone a i.fa {
   margin-right: 8px;
@@ -388,7 +389,7 @@ div.spaceDropZone {
   background: rgb(236, 240, 241);
   font-size: 30px;
   font-weight: 300;
-  color: #34495E;
+  color: #c0392b;
 }
 div.search:before {
   position: absolute;
